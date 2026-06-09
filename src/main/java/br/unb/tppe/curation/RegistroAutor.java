@@ -1,3 +1,5 @@
+package br.unb.tppe.curation;
+
 import java.util.Objects;
 
 public class RegistroAutor {

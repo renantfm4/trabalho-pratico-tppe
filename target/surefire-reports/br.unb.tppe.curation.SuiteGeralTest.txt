@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.unb.tppe.curation.SuiteGeralTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in br.unb.tppe.curation.SuiteGeralTest
