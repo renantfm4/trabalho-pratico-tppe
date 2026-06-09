@@ -13,7 +13,7 @@ Este projeto consiste em uma ferramenta de curadoria de dados para repositórios
 | Luiz Gustavo Lopes Campos | 180023179 |     [@luiz-gl-campos](https://github.com/Luiz-GL-Campos) |
 | Pedro Lucas Santana       | 202017049 |         [@pedrolucas12](https://github.com/pedrolucas12) |
 | Pedro Victor Lima Torreão | 190036761 |     [@PedroTorreao21](https://github.com/PedroTorreao21) |
-| Renan Araújo              |           |               [@renantfm4](https://github.com/renantfm4) |
+| Renan Araújo de Souza     | 211062446 |               [@renantfm4](https://github.com/renantfm4) |
 
 
 ---
