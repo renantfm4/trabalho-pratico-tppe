@@ -72,6 +72,13 @@ mvn clean test
 mvn test -Dgroups="Equivalencia"
 ```
 
+**Gerar e visualizar o Relatório de Cobertura de Código (JaCoCo):**
+O projeto está configurado com o plugin JaCoCo para verificar a cobertura dos testes (Code Coverage). Para gerar o relatório, execute:
+```bash
+mvn clean test
+```
+Após o término, abra o arquivo gerado em `target/site/jacoco/index.html` no seu navegador para visualizar as porcentagens de cobertura.
+
 Os testes cobrem:
 - **Caso 1**: Diferenças tipográficas e acentuação.
 - **Caso 2**: Sobrenome + Iniciais simples.

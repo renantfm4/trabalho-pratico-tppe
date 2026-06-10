@@ -1,0 +1,16 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDEs e Ferramentas
+.idea/
+.vscode/
+*.iml
+*.project
+*.settings
+*.classpath
