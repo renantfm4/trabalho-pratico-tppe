@@ -28,4 +28,22 @@ public class DeduplicacaoIdTest {
             assertEquals("Raphael Gonçalves Viana", r.getNome());
         }
     }
+
+    @Test
+    public void testUnificacaoIdsPeloMenorValorLilian() {
+        CuradorDados curador = new CuradorDados();
+        List<RegistroAutor> autores = Arrays.asList(
+                new RegistroAutor(899639, "Lilian Luíza Viana Vieira"),
+                new RegistroAutor(243351, "Lílian Luíza Viana Vieira"),
+                new RegistroAutor(663795, "Lílian Luíza Viana Vieira")
+        );
+
+        List<RegistroAutor> resultado = curador.processar(autores);
+
+        assertEquals(3, resultado.size());
+        for (RegistroAutor r : resultado) {
+            assertEquals(243351, r.getId());
+            assertEquals("Lílian Luíza Viana Vieira", r.getNome());
+        }
+    }
 }

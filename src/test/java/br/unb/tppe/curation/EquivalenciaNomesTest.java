@@ -20,6 +20,7 @@ public class EquivalenciaNomesTest {
             "Ana de Mattos Seabra; Seabra A. M.; Ana de Mattos Seabra",
             "Cassius de Souza; Souza C.; Cassius de Souza",
             "Luiz de Oliveira de Souza; Luiz de O. de Souza; Luiz de Oliveira de Souza",
+            "Luiz de Oliveira de Souza; Luiz Oliveira Souza; Luiz de Oliveira de Souza",
             // Caso 4: Iniciais agrupadas
             "Vanilda Cristina Junior; VC Junior; Vanilda Cristina Junior",
             "Sérgio Henrique Guaraldi; SH Guaraldi; Sérgio Henrique Guaraldi"
