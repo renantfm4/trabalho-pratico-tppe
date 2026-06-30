@@ -73,8 +73,7 @@ public class ComparadorNomes {
         }
 
         int idxComp = 0;
-        for (int i = 0; i < partesAbrev.length; i++) {
-            String tokenAbrev = partesAbrev[i];
+        for (String tokenAbrev : partesAbrev) {
             boolean matched = false;
 
             while (idxComp < partesComp.length) {
