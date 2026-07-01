@@ -59,39 +59,7 @@ public class ComparadorNomes {
             String completo,
             String abreviado
     ) {
-        String[] partesComp = completo.split(" ");
-        String[] partesAbrev = abreviado.split(" ");
-
-        if (partesAbrev.length < 2 || partesComp.length < partesAbrev.length) {
-            return false;
-        }
-
-        if (!partesAbrev[partesAbrev.length - 1].equals(
-                partesComp[partesComp.length - 1]
-        )) {
-            return false;
-        }
-
-        int idxComp = 0;
-        for (String tokenAbrev : partesAbrev) {
-            boolean matched = false;
-
-            while (idxComp < partesComp.length) {
-                String tokenComp = partesComp[idxComp];
-                if (tokenAbrev.equals(tokenComp)
-                        || (tokenAbrev.length() == 1
-                        && tokenComp.startsWith(tokenAbrev))) {
-                    matched = true;
-                    idxComp++;
-                    break;
-                }
-                idxComp++;
-            }
-            if (!matched) {
-                return false;
-            }
-        }
-        return true;
+        return new VerificadorIniciaisOrdenadas(this, completo, abreviado).compute();
     }
 
     private boolean verificarIniciaisAgrupadas(
