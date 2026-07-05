@@ -12,19 +12,12 @@ public class CuradorDados {
 
         List<RegistroAutor> resultado = clonarRegistros(registros);
 
-        // Caso 1: Tipografia (Adequação de caracteres especiais)
         corrigirTipografiaDosRegistros(resultado);
-
-        // Casos 2, 3 e 4: Unificar nomes equivalentes
         unificarNomesEquivalentes(resultado);
-
-        // Caso 5: IDs pelo menor valor
         ajustarIdsPeloMenorValor(resultado);
 
         return resultado;
     }
-
-    // --- Métodos Extraídos ---
 
     private void validarRegistros(List<RegistroAutor> registros) {
         if (registros == null) {
